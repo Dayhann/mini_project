@@ -26,7 +26,6 @@ is available in other directions. Publishes the chosen command on a separate top
 ```bash
 source /opt/ros/humble/setup.bash
 cd ~/mini_project
-colcon build --packages-select mini_project_msgs
 colcon build
 ```
 

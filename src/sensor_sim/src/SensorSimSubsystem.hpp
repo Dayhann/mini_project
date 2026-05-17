@@ -1,7 +1,6 @@
 #pragma once
 
 #include <random>
-#include <array>
 
 /**
  * Simulates a basic set of distance sensors on a rover.
@@ -12,16 +11,16 @@
  */
 class SensorSimSubsystem {
     public:
-        SensorSimSubsystem();
         /**
          * Represents a single set of distance readings from all sensors.
          */
         struct SensorReading {
-            double frontDistance;
-            double leftDistance;
-            double rightDistance;
-            double backDistance;
+            double frontDistance_m;
+            double leftDistance_m;
+            double rightDistance_m;
+            double backDistance_m;
         };
+        SensorSimSubsystem();
         SensorReading generateReading();
     private:
         double generateDistance();

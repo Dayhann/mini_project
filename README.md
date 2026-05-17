@@ -29,8 +29,7 @@ cd ~/mini_project
 colcon build
 ```
 
-The messages package must be built first since both `sensor_sim` and `navigator`
-depend on it.
+colcon handles the build order automatically based on package dependencies
 
 ## Running
 

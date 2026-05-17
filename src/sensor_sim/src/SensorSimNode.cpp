@@ -18,10 +18,10 @@ void SensorSimNode::timerCallback() {
     auto reading = m_subsystem.generateReading();
 
     auto message = mini_project_msgs::msg::SensorData();
-    message.front_distance = reading.frontDistance;
-    message.left_distance = reading.leftDistance;
-    message.right_distance = reading.rightDistance;
-    message.back_distance = reading.backDistance;
+    message.front_distance = reading.frontDistance_m;
+    message.left_distance = reading.leftDistance_m;
+    message.right_distance = reading.rightDistance_m;
+    message.back_distance = reading.backDistance_m;
 
     RCLCPP_INFO(get_logger(),
         "Publishing — Front: %.2f m, Left: %.2f m, Right: %.2f m, Back: %.2f m",

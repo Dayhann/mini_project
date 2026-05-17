@@ -14,10 +14,10 @@ SensorSimSubsystem::SensorSimSubsystem()
  */
 SensorSimSubsystem::SensorReading SensorSimSubsystem::generateReading() {
     SensorReading reading;
-    reading.frontDistance = generateDistance();
-    reading.leftDistance = generateDistance();
-    reading.rightDistance = generateDistance();
-    reading.backDistance = generateDistance();
+    reading.frontDistance_m = generateDistance();
+    reading.leftDistance_m = generateDistance();
+    reading.rightDistance_m = generateDistance();
+    reading.backDistance_m = generateDistance();
     return reading;
 }
 
